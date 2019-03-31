@@ -1,0 +1,10 @@
+{
+	"name": "AzureKeyVault",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"type": "AzureKeyVault",
+		"typeProperties": {
+			"baseUrl": "https://nameofyourkeyvault.vault.azure.net/"
+		}
+	}
+}

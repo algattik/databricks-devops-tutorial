@@ -1,0 +1,26 @@
+{
+	"name": "Apply ML model pipeline",
+	"properties": {
+		"activities": [
+			{
+				"name": "Apply ML model",
+				"type": "DatabricksNotebook",
+				"policy": {
+					"timeout": "0.01:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"typeProperties": {
+					"notebookPath": "/devops-deployed/bikesharing-apply-model"
+				},
+				"linkedServiceName": {
+					"referenceName": "AzureDatabricks",
+					"type": "LinkedServiceReference"
+				}
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

@@ -1,0 +1,630 @@
+{
+  "source": 2,
+  "revision": 53,
+  "description": null,
+  "createdBy": {
+    "displayName": "Alexandre Gattiker",
+    "url": "https://app.vssps.visualstudio.com/A89f9c878-a0cf-4c2b-bb3e-0da77e418adf/_apis/Identities/57487cca-e71e-46d8-b117-b7b0e99912f1",
+    "_links": {
+      "avatar": {
+        "href": "https://dev.azure.com/gattiker/_apis/GraphProfile/MemberAvatars/aad.NzQwYTM1MTctMjUxZC03ZTM3LWFjZmMtM2E2ODU5NmE3NTg3"
+      }
+    },
+    "id": "57487cca-e71e-46d8-b117-b7b0e99912f1",
+    "uniqueName": "gattiker@example.com",
+    "imageUrl": "https://dev.azure.com/gattiker/_api/_common/identityImage?id=57487cca-e71e-46d8-b117-b7b0e99912f1",
+    "descriptor": "aad.NzQwYTM1MTctMjUxZC03ZTM3LWFjZmMtM2E2ODU5NmE3NTg3"
+  },
+  "createdOn": "2019-03-30T04:00:29.750Z",
+  "modifiedBy": {
+    "displayName": "Alexandre Gattiker",
+    "url": "https://app.vssps.visualstudio.com/A89f9c878-a0cf-4c2b-bb3e-0da77e418adf/_apis/Identities/57487cca-e71e-46d8-b117-b7b0e99912f1",
+    "_links": {
+      "avatar": {
+        "href": "https://dev.azure.com/gattiker/_apis/GraphProfile/MemberAvatars/aad.NzQwYTM1MTctMjUxZC03ZTM3LWFjZmMtM2E2ODU5NmE3NTg3"
+      }
+    },
+    "id": "57487cca-e71e-46d8-b117-b7b0e99912f1",
+    "uniqueName": "gattiker@example.com",
+    "imageUrl": "https://dev.azure.com/gattiker/_api/_common/identityImage?id=57487cca-e71e-46d8-b117-b7b0e99912f1",
+    "descriptor": "aad.NzQwYTM1MTctMjUxZC03ZTM3LWFjZmMtM2E2ODU5NmE3NTg3"
+  },
+  "modifiedOn": "2019-03-30T20:47:38.863Z",
+  "isDeleted": false,
+  "variables": {
+    "DATABRICKS_HOST": {
+      "value": "https://westeurope.azuredatabricks.net"
+    },
+    "DATABRICKS_TOKEN": {
+      "value": ""
+    },
+    "LOCATION": {
+      "value": "westeurope"
+    }
+  },
+  "variableGroups": [],
+  "environments": [
+    {
+      "id": 1,
+      "name": "DEV",
+      "rank": 1,
+      "owner": {
+        "displayName": "Alexandre Gattiker",
+        "url": "https://app.vssps.visualstudio.com/A89f9c878-a0cf-4c2b-bb3e-0da77e418adf/_apis/Identities/57487cca-e71e-46d8-b117-b7b0e99912f1",
+        "_links": {
+          "avatar": {
+            "href": "https://dev.azure.com/gattiker/_apis/GraphProfile/MemberAvatars/aad.NzQwYTM1MTctMjUxZC03ZTM3LWFjZmMtM2E2ODU5NmE3NTg3"
+          }
+        },
+        "id": "57487cca-e71e-46d8-b117-b7b0e99912f1",
+        "uniqueName": "gattiker@example.com",
+        "imageUrl": "https://dev.azure.com/gattiker/_api/_common/identityImage?id=57487cca-e71e-46d8-b117-b7b0e99912f1",
+        "descriptor": "aad.NzQwYTM1MTctMjUxZC03ZTM3LWFjZmMtM2E2ODU5NmE3NTg3"
+      },
+      "variables": {
+        "DATA_FACTORY_NAME": {
+          "value": "databrickscicdtut01dev"
+        },
+        "KEY_VAULT_NAME": {
+          "value": "databrickscicdtut01dev"
+        },
+        "RESOURCE_GROUP_NAME": {
+          "value": "databrickscicdtut01dev"
+        },
+        "STORAGE_ACCOUNT_NAME": {
+          "value": "databrickscicdtut01dev"
+        }
+      },
+      "variableGroups": [],
+      "preDeployApprovals": {
+        "approvals": [
+          {
+            "rank": 1,
+            "isAutomated": true,
+            "isNotificationOn": false,
+            "id": 1
+          }
+        ],
+        "approvalOptions": {
+          "requiredApproverCount": null,
+          "releaseCreatorCanBeApprover": false,
+          "autoTriggeredAndPreviousEnvironmentApprovedCanBeSkipped": false,
+          "enforceIdentityRevalidation": false,
+          "timeoutInMinutes": 0,
+          "executionOrder": 1
+        }
+      },
+      "deployStep": {
+        "id": 2
+      },
+      "postDeployApprovals": {
+        "approvals": [
+          {
+            "rank": 1,
+            "isAutomated": true,
+            "isNotificationOn": false,
+            "id": 3
+          }
+        ],
+        "approvalOptions": {
+          "requiredApproverCount": null,
+          "releaseCreatorCanBeApprover": false,
+          "autoTriggeredAndPreviousEnvironmentApprovedCanBeSkipped": false,
+          "enforceIdentityRevalidation": false,
+          "timeoutInMinutes": 0,
+          "executionOrder": 2
+        }
+      },
+      "deployPhases": [
+        {
+          "deploymentInput": {
+            "parallelExecution": {
+              "parallelExecutionType": 0
+            },
+            "skipArtifactsDownload": false,
+            "artifactsDownloadInput": {
+              "downloadInputs": [
+                {
+                  "alias": "BuildPipeline",
+                  "artifactType": "Build",
+                  "artifactDownloadMode": "All",
+                  "artifactItems": []
+                }
+              ]
+            },
+            "queueId": 107,
+            "demands": [],
+            "enableAccessToken": false,
+            "timeoutInMinutes": 0,
+            "jobCancelTimeoutInMinutes": 1,
+            "condition": "succeeded()",
+            "overrideInputs": {}
+          },
+          "rank": 1,
+          "phaseType": 1,
+          "name": "Agent job",
+          "refName": null,
+          "workflowTasks": [
+            {
+              "environment": {},
+              "taskId": "46e4be58-730b-4389-8a2f-ea10b3e5e815",
+              "version": "1.*",
+              "name": "Install Databricks client",
+              "refName": "",
+              "enabled": true,
+              "alwaysRun": false,
+              "continueOnError": false,
+              "timeoutInMinutes": 0,
+              "definitionType": "task",
+              "overrideInputs": {},
+              "condition": "succeeded()",
+              "inputs": {
+                "connectedServiceNameARM": "ef084d52-d369-4aab-87b4-3a550e592373",
+                "scriptLocation": "scriptPath",
+                "scriptPath": "$(System.DefaultWorkingDirectory)/BuildPipeline/drop/azure-devops/release/install-databricks-client.sh",
+                "inlineScript": "",
+                "args": "",
+                "addSpnToEnvironment": "false",
+                "useGlobalConfig": "false",
+                "cwd": "$(System.DefaultWorkingDirectory)/BuildPipeline/drop",
+                "failOnStandardError": "false"
+              }
+            },
+            {
+              "environment": {},
+              "taskId": "46e4be58-730b-4389-8a2f-ea10b3e5e815",
+              "version": "1.*",
+              "name": "Deploy resources",
+              "refName": "",
+              "enabled": true,
+              "alwaysRun": false,
+              "continueOnError": false,
+              "timeoutInMinutes": 0,
+              "definitionType": "task",
+              "overrideInputs": {},
+              "condition": "succeeded()",
+              "inputs": {
+                "connectedServiceNameARM": "ef084d52-d369-4aab-87b4-3a550e592373",
+                "scriptLocation": "scriptPath",
+                "scriptPath": "$(System.DefaultWorkingDirectory)/BuildPipeline/drop/azure-devops/release/deploy-resources.sh",
+                "inlineScript": "",
+                "args": "",
+                "addSpnToEnvironment": "true",
+                "useGlobalConfig": "false",
+                "cwd": "$(System.DefaultWorkingDirectory)/BuildPipeline/drop",
+                "failOnStandardError": "false"
+              }
+            },
+            {
+              "environment": {},
+              "taskId": "46e4be58-730b-4389-8a2f-ea10b3e5e815",
+              "version": "1.*",
+              "name": "Provision Databricks",
+              "refName": "",
+              "enabled": true,
+              "alwaysRun": false,
+              "continueOnError": false,
+              "timeoutInMinutes": 0,
+              "definitionType": "task",
+              "overrideInputs": {},
+              "condition": "succeeded()",
+              "inputs": {
+                "connectedServiceNameARM": "ef084d52-d369-4aab-87b4-3a550e592373",
+                "scriptLocation": "scriptPath",
+                "scriptPath": "$(System.DefaultWorkingDirectory)/BuildPipeline/drop/azure-devops/release/provision-databricks.sh",
+                "inlineScript": "",
+                "args": "",
+                "addSpnToEnvironment": "false",
+                "useGlobalConfig": "false",
+                "cwd": "$(System.DefaultWorkingDirectory)/BuildPipeline/drop",
+                "failOnStandardError": "false"
+              }
+            }
+          ]
+        }
+      ],
+      "environmentOptions": {
+        "emailNotificationType": "OnlyOnFailure",
+        "emailRecipients": "release.environment.owner;release.creator",
+        "skipArtifactsDownload": false,
+        "timeoutInMinutes": 0,
+        "enableAccessToken": false,
+        "publishDeploymentStatus": true,
+        "badgeEnabled": false,
+        "autoLinkWorkItems": false,
+        "pullRequestDeploymentEnabled": false
+      },
+      "demands": [],
+      "conditions": [
+        {
+          "name": "ReleaseStarted",
+          "conditionType": 1,
+          "value": ""
+        }
+      ],
+      "executionPolicy": {
+        "concurrencyCount": 1,
+        "queueDepthCount": 0
+      },
+      "schedules": [],
+      "currentRelease": {
+        "id": 39,
+        "url": "https://vsrm.dev.azure.com/gattiker/1c9c3807-115e-4c4b-9b83-9dec8b6a8a36/_apis/Release/releases/39",
+        "_links": {}
+      },
+      "retentionPolicy": {
+        "daysToKeep": 30,
+        "releasesToKeep": 3,
+        "retainBuild": true
+      },
+      "processParameters": {},
+      "properties": {},
+      "preDeploymentGates": {
+        "id": 0,
+        "gatesOptions": null,
+        "gates": []
+      },
+      "postDeploymentGates": {
+        "id": 0,
+        "gatesOptions": null,
+        "gates": []
+      },
+      "environmentTriggers": [],
+      "badgeUrl": "https://vsrm.dev.azure.com/gattiker/_apis/public/Release/badge/1c9c3807-115e-4c4b-9b83-9dec8b6a8a36/1/1"
+    },
+    {
+      "id": 5,
+      "name": "TEST",
+      "rank": 2,
+      "owner": {
+        "displayName": "Alexandre Gattiker",
+        "url": "https://app.vssps.visualstudio.com/A89f9c878-a0cf-4c2b-bb3e-0da77e418adf/_apis/Identities/57487cca-e71e-46d8-b117-b7b0e99912f1",
+        "_links": {
+          "avatar": {
+            "href": "https://dev.azure.com/gattiker/_apis/GraphProfile/MemberAvatars/aad.NzQwYTM1MTctMjUxZC03ZTM3LWFjZmMtM2E2ODU5NmE3NTg3"
+          }
+        },
+        "id": "57487cca-e71e-46d8-b117-b7b0e99912f1",
+        "uniqueName": "gattiker@example.com",
+        "imageUrl": "https://dev.azure.com/gattiker/_api/_common/identityImage?id=57487cca-e71e-46d8-b117-b7b0e99912f1",
+        "descriptor": "aad.NzQwYTM1MTctMjUxZC03ZTM3LWFjZmMtM2E2ODU5NmE3NTg3"
+      },
+      "variables": {
+        "DATA_FACTORY_NAME": {
+          "value": "databrickscicdtut01test"
+        },
+        "KEY_VAULT_NAME": {
+          "value": "databrickscicdtut01test"
+        },
+        "RESOURCE_GROUP_NAME": {
+          "value": "databrickscicdtut01test"
+        },
+        "STORAGE_ACCOUNT_NAME": {
+          "value": "databrickscicdtut01test"
+        }
+      },
+      "variableGroups": [],
+      "preDeployApprovals": {
+        "approvals": [
+          {
+            "rank": 1,
+            "isAutomated": true,
+            "isNotificationOn": false,
+            "id": 13
+          }
+        ],
+        "approvalOptions": {
+          "requiredApproverCount": null,
+          "releaseCreatorCanBeApprover": false,
+          "autoTriggeredAndPreviousEnvironmentApprovedCanBeSkipped": false,
+          "enforceIdentityRevalidation": false,
+          "timeoutInMinutes": 0,
+          "executionOrder": 1
+        }
+      },
+      "deployStep": {
+        "id": 14
+      },
+      "postDeployApprovals": {
+        "approvals": [
+          {
+            "rank": 1,
+            "isAutomated": true,
+            "isNotificationOn": false,
+            "id": 15
+          }
+        ],
+        "approvalOptions": {
+          "requiredApproverCount": null,
+          "releaseCreatorCanBeApprover": false,
+          "autoTriggeredAndPreviousEnvironmentApprovedCanBeSkipped": false,
+          "enforceIdentityRevalidation": false,
+          "timeoutInMinutes": 0,
+          "executionOrder": 2
+        }
+      },
+      "deployPhases": [
+        {
+          "deploymentInput": {
+            "parallelExecution": {
+              "parallelExecutionType": 0
+            },
+            "skipArtifactsDownload": false,
+            "artifactsDownloadInput": {
+              "downloadInputs": [
+                {
+                  "alias": "BuildPipeline",
+                  "artifactType": "Build",
+                  "artifactDownloadMode": "All",
+                  "artifactItems": []
+                }
+              ]
+            },
+            "queueId": 107,
+            "demands": [],
+            "enableAccessToken": false,
+            "timeoutInMinutes": 0,
+            "jobCancelTimeoutInMinutes": 1,
+            "condition": "succeeded()",
+            "overrideInputs": {}
+          },
+          "rank": 1,
+          "phaseType": 1,
+          "name": "Agent job",
+          "refName": null,
+          "workflowTasks": [
+            {
+              "environment": {},
+              "taskId": "46e4be58-730b-4389-8a2f-ea10b3e5e815",
+              "version": "1.*",
+              "name": "Install Databricks client",
+              "refName": "",
+              "enabled": true,
+              "alwaysRun": false,
+              "continueOnError": false,
+              "timeoutInMinutes": 0,
+              "definitionType": "task",
+              "overrideInputs": {},
+              "condition": "succeeded()",
+              "inputs": {
+                "connectedServiceNameARM": "ef084d52-d369-4aab-87b4-3a550e592373",
+                "scriptLocation": "scriptPath",
+                "scriptPath": "$(System.DefaultWorkingDirectory)/BuildPipeline/drop/azure-devops/release/install-databricks-client.sh",
+                "inlineScript": "",
+                "args": "",
+                "addSpnToEnvironment": "false",
+                "useGlobalConfig": "false",
+                "cwd": "$(System.DefaultWorkingDirectory)/BuildPipeline/drop",
+                "failOnStandardError": "false"
+              }
+            },
+            {
+              "environment": {},
+              "taskId": "46e4be58-730b-4389-8a2f-ea10b3e5e815",
+              "version": "1.*",
+              "name": "Deploy resources",
+              "refName": "",
+              "enabled": true,
+              "alwaysRun": false,
+              "continueOnError": false,
+              "timeoutInMinutes": 0,
+              "definitionType": "task",
+              "overrideInputs": {},
+              "condition": "succeeded()",
+              "inputs": {
+                "connectedServiceNameARM": "ef084d52-d369-4aab-87b4-3a550e592373",
+                "scriptLocation": "scriptPath",
+                "scriptPath": "$(System.DefaultWorkingDirectory)/BuildPipeline/drop/azure-devops/release/deploy-resources.sh",
+                "inlineScript": "",
+                "args": "",
+                "addSpnToEnvironment": "true",
+                "useGlobalConfig": "false",
+                "cwd": "$(System.DefaultWorkingDirectory)/BuildPipeline/drop",
+                "failOnStandardError": "false"
+              }
+            },
+            {
+              "environment": {},
+              "taskId": "46e4be58-730b-4389-8a2f-ea10b3e5e815",
+              "version": "1.*",
+              "name": "Provision Databricks",
+              "refName": "",
+              "enabled": true,
+              "alwaysRun": false,
+              "continueOnError": false,
+              "timeoutInMinutes": 0,
+              "definitionType": "task",
+              "overrideInputs": {},
+              "condition": "succeeded()",
+              "inputs": {
+                "connectedServiceNameARM": "ef084d52-d369-4aab-87b4-3a550e592373",
+                "scriptLocation": "scriptPath",
+                "scriptPath": "$(System.DefaultWorkingDirectory)/BuildPipeline/drop/azure-devops/release/provision-databricks.sh",
+                "inlineScript": "",
+                "args": "",
+                "addSpnToEnvironment": "false",
+                "useGlobalConfig": "false",
+                "cwd": "$(System.DefaultWorkingDirectory)/BuildPipeline/drop",
+                "failOnStandardError": "false"
+              }
+            },
+            {
+              "environment": {},
+              "taskId": "46e4be58-730b-4389-8a2f-ea10b3e5e815",
+              "version": "1.*",
+              "name": "Provision Data Factory",
+              "refName": "",
+              "enabled": true,
+              "alwaysRun": false,
+              "continueOnError": false,
+              "timeoutInMinutes": 0,
+              "definitionType": "task",
+              "overrideInputs": {},
+              "condition": "succeeded()",
+              "inputs": {
+                "connectedServiceNameARM": "ef084d52-d369-4aab-87b4-3a550e592373",
+                "scriptLocation": "scriptPath",
+                "scriptPath": "$(System.DefaultWorkingDirectory)/BuildPipeline/drop/azure-devops/release/provision-data-factory.sh",
+                "inlineScript": "",
+                "args": "",
+                "addSpnToEnvironment": "false",
+                "useGlobalConfig": "false",
+                "cwd": "$(System.DefaultWorkingDirectory)/BuildPipeline/drop",
+                "failOnStandardError": "false"
+              }
+            },
+            {
+              "environment": {},
+              "taskId": "46e4be58-730b-4389-8a2f-ea10b3e5e815",
+              "version": "1.*",
+              "name": "Run integration test",
+              "refName": "",
+              "enabled": true,
+              "alwaysRun": false,
+              "continueOnError": false,
+              "timeoutInMinutes": 0,
+              "definitionType": "task",
+              "overrideInputs": {},
+              "condition": "succeeded()",
+              "inputs": {
+                "connectedServiceNameARM": "ef084d52-d369-4aab-87b4-3a550e592373",
+                "scriptLocation": "scriptPath",
+                "scriptPath": "$(System.DefaultWorkingDirectory)/BuildPipeline/drop/azure-devops/release/run-integration-test.sh",
+                "inlineScript": "",
+                "args": "",
+                "addSpnToEnvironment": "false",
+                "useGlobalConfig": "false",
+                "cwd": "$(System.DefaultWorkingDirectory)/BuildPipeline/drop",
+                "failOnStandardError": "false"
+              }
+            }
+          ]
+        }
+      ],
+      "environmentOptions": {
+        "emailNotificationType": "OnlyOnFailure",
+        "emailRecipients": "release.environment.owner;release.creator",
+        "skipArtifactsDownload": false,
+        "timeoutInMinutes": 0,
+        "enableAccessToken": false,
+        "publishDeploymentStatus": true,
+        "badgeEnabled": false,
+        "autoLinkWorkItems": false,
+        "pullRequestDeploymentEnabled": false
+      },
+      "demands": [],
+      "conditions": [
+        {
+          "name": "DEV",
+          "conditionType": 2,
+          "value": "4"
+        }
+      ],
+      "executionPolicy": {
+        "concurrencyCount": 1,
+        "queueDepthCount": 0
+      },
+      "schedules": [],
+      "currentRelease": {
+        "id": 39,
+        "url": "https://vsrm.dev.azure.com/gattiker/1c9c3807-115e-4c4b-9b83-9dec8b6a8a36/_apis/Release/releases/39",
+        "_links": {}
+      },
+      "retentionPolicy": {
+        "daysToKeep": 30,
+        "releasesToKeep": 3,
+        "retainBuild": true
+      },
+      "processParameters": {},
+      "properties": {},
+      "preDeploymentGates": {
+        "id": 0,
+        "gatesOptions": null,
+        "gates": []
+      },
+      "postDeploymentGates": {
+        "id": 0,
+        "gatesOptions": null,
+        "gates": []
+      },
+      "environmentTriggers": [],
+      "badgeUrl": "https://vsrm.dev.azure.com/gattiker/_apis/public/Release/badge/1c9c3807-115e-4c4b-9b83-9dec8b6a8a36/1/5"
+    }
+  ],
+  "artifacts": [
+    {
+      "sourceId": "1c9c3807-115e-4c4b-9b83-9dec8b6a8a36:3",
+      "type": "Build",
+      "alias": "BuildPipeline",
+      "definitionReference": {
+        "artifactSourceDefinitionUrl": {
+          "id": "https://dev.azure.com/gattiker/_permalink/_build/index?collectionId=8eb8c206-18a2-429f-8229-28fde5b90a93&projectId=1c9c3807-115e-4c4b-9b83-9dec8b6a8a36&definitionId=3",
+          "name": ""
+        },
+        "defaultVersionBranch": {
+          "id": "",
+          "name": ""
+        },
+        "defaultVersionSpecific": {
+          "id": "",
+          "name": ""
+        },
+        "defaultVersionTags": {
+          "id": "",
+          "name": ""
+        },
+        "defaultVersionType": {
+          "id": "latestType",
+          "name": "Latest"
+        },
+        "definition": {
+          "id": "3",
+          "name": "databricks-devops-tutorial-Maven-CI"
+        },
+        "definitions": {
+          "id": "",
+          "name": ""
+        },
+        "IsMultiDefinitionType": {
+          "id": "False",
+          "name": "False"
+        },
+        "project": {
+          "id": "1c9c3807-115e-4c4b-9b83-9dec8b6a8a36",
+          "name": "databricks-devops-tutorial"
+        },
+        "repository": {
+          "id": "",
+          "name": ""
+        }
+      },
+      "isPrimary": true,
+      "isRetained": false
+    }
+  ],
+  "triggers": [],
+  "releaseNameFormat": "Release-$(rev:r)",
+  "tags": [],
+  "pipelineProcess": {
+    "type": 1
+  },
+  "properties": {
+    "DefinitionCreationSource": {
+      "$type": "System.String",
+      "$value": "ReleaseNew"
+    }
+  },
+  "id": 1,
+  "name": "ReleasePipeline",
+  "path": "\\",
+  "projectReference": null,
+  "url": "https://vsrm.dev.azure.com/gattiker/1c9c3807-115e-4c4b-9b83-9dec8b6a8a36/_apis/Release/definitions/1",
+  "_links": {
+    "self": {
+      "href": "https://vsrm.dev.azure.com/gattiker/1c9c3807-115e-4c4b-9b83-9dec8b6a8a36/_apis/Release/definitions/1"
+    },
+    "web": {
+      "href": "https://dev.azure.com/gattiker/1c9c3807-115e-4c4b-9b83-9dec8b6a8a36/_release?definitionId=1"
+    }
+  }
+}
