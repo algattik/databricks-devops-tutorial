@@ -12,7 +12,9 @@
 				},
 				"secretName": "AzureDatabricksToken"
 			},
-			"existingClusterId": "0330-205106-not297"
+			"newClusterNodeType": "Standard_DS3_v2",
+			"newClusterNumOfWorker": "1",
+			"newClusterVersion": "5.2.x-scala2.11"
 		}
 	},
 	"type": "Microsoft.DataFactory/factories/linkedservices"
