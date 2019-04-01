@@ -125,7 +125,7 @@
             "artifactsDownloadInput": {
               "downloadInputs": [
                 {
-                  "alias": "BuildPipeline",
+                  "alias": "_devopstutorial",
                   "artifactType": "Build",
                   "artifactDownloadMode": "All",
                   "artifactItems": []
@@ -161,12 +161,12 @@
               "inputs": {
                 "connectedServiceNameARM": "ef084d52-d369-4aab-87b4-3a550e592373",
                 "scriptLocation": "scriptPath",
-                "scriptPath": "$(System.DefaultWorkingDirectory)/BuildPipeline/drop/azure-devops/release/install-databricks-client.sh",
+                "scriptPath": "$(System.DefaultWorkingDirectory)/_devopstutorial/drop/azure-pipelines/install-databricks-client.sh",
                 "inlineScript": "",
                 "args": "",
                 "addSpnToEnvironment": "false",
                 "useGlobalConfig": "false",
-                "cwd": "$(System.DefaultWorkingDirectory)/BuildPipeline/drop",
+                "cwd": "$(System.DefaultWorkingDirectory)/_devopstutorial/drop",
                 "failOnStandardError": "false"
               }
             },
@@ -186,12 +186,12 @@
               "inputs": {
                 "connectedServiceNameARM": "ef084d52-d369-4aab-87b4-3a550e592373",
                 "scriptLocation": "scriptPath",
-                "scriptPath": "$(System.DefaultWorkingDirectory)/BuildPipeline/drop/azure-devops/release/deploy-resources.sh",
+                "scriptPath": "$(System.DefaultWorkingDirectory)/_devopstutorial/drop/azure-pipelines/deploy-resources.sh",
                 "inlineScript": "",
                 "args": "",
                 "addSpnToEnvironment": "true",
                 "useGlobalConfig": "false",
-                "cwd": "$(System.DefaultWorkingDirectory)/BuildPipeline/drop",
+                "cwd": "$(System.DefaultWorkingDirectory)/_devopstutorial/drop",
                 "failOnStandardError": "false"
               }
             },
@@ -211,12 +211,12 @@
               "inputs": {
                 "connectedServiceNameARM": "ef084d52-d369-4aab-87b4-3a550e592373",
                 "scriptLocation": "scriptPath",
-                "scriptPath": "$(System.DefaultWorkingDirectory)/BuildPipeline/drop/azure-devops/release/provision-databricks.sh",
+                "scriptPath": "$(System.DefaultWorkingDirectory)/_devopstutorial/drop/azure-pipelines/provision-databricks.sh",
                 "inlineScript": "",
                 "args": "",
                 "addSpnToEnvironment": "false",
                 "useGlobalConfig": "false",
-                "cwd": "$(System.DefaultWorkingDirectory)/BuildPipeline/drop",
+                "cwd": "$(System.DefaultWorkingDirectory)/_devopstutorial/drop",
                 "failOnStandardError": "false"
               }
             }
@@ -353,7 +353,7 @@
             "artifactsDownloadInput": {
               "downloadInputs": [
                 {
-                  "alias": "BuildPipeline",
+                  "alias": "_devopstutorial",
                   "artifactType": "Build",
                   "artifactDownloadMode": "All",
                   "artifactItems": []
@@ -389,12 +389,12 @@
               "inputs": {
                 "connectedServiceNameARM": "ef084d52-d369-4aab-87b4-3a550e592373",
                 "scriptLocation": "scriptPath",
-                "scriptPath": "$(System.DefaultWorkingDirectory)/BuildPipeline/drop/azure-devops/release/install-databricks-client.sh",
+                "scriptPath": "$(System.DefaultWorkingDirectory)/_devopstutorial/drop/azure-pipelines/install-databricks-client.sh",
                 "inlineScript": "",
                 "args": "",
                 "addSpnToEnvironment": "false",
                 "useGlobalConfig": "false",
-                "cwd": "$(System.DefaultWorkingDirectory)/BuildPipeline/drop",
+                "cwd": "$(System.DefaultWorkingDirectory)/_devopstutorial/drop",
                 "failOnStandardError": "false"
               }
             },
@@ -414,12 +414,12 @@
               "inputs": {
                 "connectedServiceNameARM": "ef084d52-d369-4aab-87b4-3a550e592373",
                 "scriptLocation": "scriptPath",
-                "scriptPath": "$(System.DefaultWorkingDirectory)/BuildPipeline/drop/azure-devops/release/deploy-resources.sh",
+                "scriptPath": "$(System.DefaultWorkingDirectory)/_devopstutorial/drop/azure-pipelines/deploy-resources.sh",
                 "inlineScript": "",
                 "args": "",
                 "addSpnToEnvironment": "true",
                 "useGlobalConfig": "false",
-                "cwd": "$(System.DefaultWorkingDirectory)/BuildPipeline/drop",
+                "cwd": "$(System.DefaultWorkingDirectory)/_devopstutorial/drop",
                 "failOnStandardError": "false"
               }
             },
@@ -439,12 +439,12 @@
               "inputs": {
                 "connectedServiceNameARM": "ef084d52-d369-4aab-87b4-3a550e592373",
                 "scriptLocation": "scriptPath",
-                "scriptPath": "$(System.DefaultWorkingDirectory)/BuildPipeline/drop/azure-devops/release/provision-databricks.sh",
+                "scriptPath": "$(System.DefaultWorkingDirectory)/_devopstutorial/drop/azure-pipelines/provision-databricks.sh",
                 "inlineScript": "",
                 "args": "",
                 "addSpnToEnvironment": "false",
                 "useGlobalConfig": "false",
-                "cwd": "$(System.DefaultWorkingDirectory)/BuildPipeline/drop",
+                "cwd": "$(System.DefaultWorkingDirectory)/_devopstutorial/drop",
                 "failOnStandardError": "false"
               }
             },
@@ -464,12 +464,12 @@
               "inputs": {
                 "connectedServiceNameARM": "ef084d52-d369-4aab-87b4-3a550e592373",
                 "scriptLocation": "scriptPath",
-                "scriptPath": "$(System.DefaultWorkingDirectory)/BuildPipeline/drop/azure-devops/release/provision-data-factory.sh",
+                "scriptPath": "$(System.DefaultWorkingDirectory)/_devopstutorial/drop/azure-pipelines/provision-data-factory.sh",
                 "inlineScript": "",
                 "args": "",
                 "addSpnToEnvironment": "false",
                 "useGlobalConfig": "false",
-                "cwd": "$(System.DefaultWorkingDirectory)/BuildPipeline/drop",
+                "cwd": "$(System.DefaultWorkingDirectory)/_devopstutorial/drop",
                 "failOnStandardError": "false"
               }
             },
@@ -489,12 +489,12 @@
               "inputs": {
                 "connectedServiceNameARM": "ef084d52-d369-4aab-87b4-3a550e592373",
                 "scriptLocation": "scriptPath",
-                "scriptPath": "$(System.DefaultWorkingDirectory)/BuildPipeline/drop/azure-devops/release/run-integration-test.sh",
+                "scriptPath": "$(System.DefaultWorkingDirectory)/_devopstutorial/drop/azure-pipelines/run-integration-test.sh",
                 "inlineScript": "",
                 "args": "",
                 "addSpnToEnvironment": "false",
                 "useGlobalConfig": "false",
-                "cwd": "$(System.DefaultWorkingDirectory)/BuildPipeline/drop",
+                "cwd": "$(System.DefaultWorkingDirectory)/_devopstutorial/drop",
                 "failOnStandardError": "false"
               }
             }
@@ -555,7 +555,7 @@
     {
       "sourceId": "1c9c3807-115e-4c4b-9b83-9dec8b6a8a36:3",
       "type": "Build",
-      "alias": "BuildPipeline",
+      "alias": "_devopstutorial",
       "definitionReference": {
         "artifactSourceDefinitionUrl": {
           "id": "https://dev.azure.com/gattiker/_permalink/_build/index?collectionId=8eb8c206-18a2-429f-8229-28fde5b90a93&projectId=1c9c3807-115e-4c4b-9b83-9dec8b6a8a36&definitionId=3",

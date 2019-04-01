@@ -15,6 +15,6 @@ for template in \
     mkdir -p datafactory-generated
     basename=$(basename "$template")
     generated_file="datafactory-generated/$basename"
-    jq -sf azure-devops/release/provision-data-factory-without-zip/generate-adf-template.jq "$template" > "$generated_file"
+    jq -sf azure-pipelines/provision-data-factory-without-zip/generate-adf-template.jq "$template" > "$generated_file"
     az group deployment create -g $RESOURCE_GROUP_NAME --template-file "$generated_file" --name "$DATA_FACTORY_NAME-$COUNTER"
 done
